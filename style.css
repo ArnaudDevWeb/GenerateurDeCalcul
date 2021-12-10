@@ -2,3 +2,22 @@
     padding: 0;
     margin: 0;
 }
+.btn{
+    filter: drop-shadow(0 0 0.5rem rgb(191, 232, 8));
+}
+.btn:hover{
+    transform: scale(3);
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 50px #d36a0f;
+    }
+    to {
+      text-shadow: 0 20px 100px #b50f0f, 0 0 70px #c91512;
+    }
+  }
+#phraseFinal{
+    color: dodgerblue;
+    font-size: 100px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
